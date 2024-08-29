@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <title>LeoMobile</title>
+</head>
+
+
+<body class="md:w-[100%] h-[2000px] bg-[#f8f9fa]">
+    <!-- make header -->
+    <nav dir="ltr" class="lg:w-[90%] mx-auto lg:mt-[20px] lg:rounded-[16px] shadow-xl lg:sticky top-0 px-4 py-4 flex justify-between items-center bg-white">
+        <div class="text-3xl font-bold leading-none flex flex-row items-center">
+            <img class="w-[70px]" src="./images/LogoLMobile.png" alt="">
+            <p class="font-[Roboto] text-[22px]">LeoMobile</p>
+        </div>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+        <ul 
+            class="hidden lg:flex lg:flex-row justify-between items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-sm text-blue-600 hover:text-blue-800 font-bold" href="#">ارتباط با ما</a></li>
+            <li><a class="text-sm text-black hover:text-red-600 font-bold" href="#">انبارگردانی</a></li>
+            <li><a class="text-sm text-black hover:text-red-600 font-bold" href="#">تخفیفات شگفت انگیز</a></li>
+            <li><a class="text-sm text-black hover:text-red-600 font-bold" href="#">محصولات</a></li>
+            <li><a class="text-sm text-black hover:text-red-600 font-bold" href="#">خانه</a></li>
+            <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+                href="#">ورود</a>
+        </ul>
+
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <p class="font-[Roboto] text-[18px] ml-[20px]">LeoMobile</p>
+                </a>
+                <button class="navbar-close">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L12 13.06L9.7 15.36C9.55 15.51 9.36 15.58 9.17 15.58C8.98 15.58 8.79 15.51 8.64 15.36C8.35 15.07 8.35 14.59 8.64 14.3L10.94 12L8.64 9.7C8.35 9.41 8.35 8.93 8.64 8.64C8.93 8.35 9.41 8.35 9.7 8.64L12 10.94L14.3 8.64C14.59 8.35 15.07 8.35 15.36 8.64C15.65 8.93 15.65 9.41 15.36 9.7L13.06 12L15.36 14.3Z" fill="#292D32"/>
+                        </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">خانه</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">محصولات</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">تخفیفات شگفت انگیز</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">انبارگردانی</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">ارتباط با ما</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
+                        href="#">ورود</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <a href="https://zil.ink/farzwd696" class="capitalize">Copyright © 2024 Farzad Faridouni . All rights reserved</a>
+                </p>
+            </div>
+        </nav>
+        </div>
+        <!-- make section boxs -->
+        <section class="w-[85%]  bg-[#92B4EC] mx-auto mt-[20px] shadow-md rounded-[16px] flex flex-row flex-wrap justify-center items-center py-[20px]">
+            <div class="w-[98%] flex flex-row justify-between mb-3">
+                <div class="w-[38%] h-[220px] bg-white rounded-2xl"></div>
+                <div class="w-[60%] h-[220px] bg-white rounded-2xl"></div>
+            </div>
+            <div class="w-[98%] h-[220px] bg-white rounded-2xl"></div>
+        </section>
+
+
+
+
+
+        <script>
+            // Burger menus
+            document.addEventListener('DOMContentLoaded', function () {
+                // open
+                const burger = document.querySelectorAll('.navbar-burger');
+                const menu = document.querySelectorAll('.navbar-menu');
+
+                if (burger.length && menu.length) {
+                    for (var i = 0; i < burger.length; i++) {
+                        burger[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+
+                // close
+                const close = document.querySelectorAll('.navbar-close');
+                const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+                if (close.length) {
+                    for (var i = 0; i < close.length; i++) {
+                        close[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+
+                if (backdrop.length) {
+                    for (var i = 0; i < backdrop.length; i++) {
+                        backdrop[i].addEventListener('click', function () {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            });
+        </script>
+        <script src="./javascript/main.js"></script>
+        <script src="./javascript/jqcdn.js"></script>
+</body>
+
+
+
+
+
+</html>
